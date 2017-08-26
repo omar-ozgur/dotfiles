@@ -23,8 +23,8 @@ Plug 'scrooloose/nerdtree'
 " Airline
 Plug 'bling/vim-airline'
 
-" Ctrl-P fuzzy file search
-Plug 'kien/ctrlp.vim'
+" Fuzzy file search
+Plug 'junegunn/fzf'
 
 " Code completion
 Plug 'Valloric/YouCompleteMe'
