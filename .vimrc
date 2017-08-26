@@ -25,6 +25,7 @@ Plug 'bling/vim-airline'
 
 " Fuzzy file search
 Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim'
 
 " Code completion
 Plug 'Valloric/YouCompleteMe'
