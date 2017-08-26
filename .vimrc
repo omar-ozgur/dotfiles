@@ -29,6 +29,21 @@ Plug 'kien/ctrlp.vim'
 " Code completion
 Plug 'Valloric/YouCompleteMe'
 
+" Git gutter symbols
+Plug 'airblade/vim-gitgutter'
+
+" Easy vim motions
+Plug 'easymotion/vim-easymotion'
+
+" Rails support
+Plug 'tpope/vim-rails'
+
+" Syntax checking
+Plug 'scrooloose/syntastic'
+
+" Git support
+Plug 'tpope/vim-fugitive'
+
 " Initialize the plugin system
 call plug#end()
 
@@ -61,9 +76,6 @@ let g:mapleader = ","
 " Fast saving
 nmap <leader>w :w!<cr>
 
-" Sudo-save a file with :W
-command W w !sudo tee % > /dev/null
-
 " Disable highlight when <leader><cr> is pressed
 map <silent> <leader><cr> :noh<cr>
 
@@ -72,6 +84,9 @@ map 0 ^
 
 " Open NERD tree
 map <leader>n :NERDTree<cr>
+
+" Run 'source %'
+map <leader>% :source %<cr>
 
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 "                                                                             "
