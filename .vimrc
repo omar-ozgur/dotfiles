@@ -45,6 +45,9 @@ Plug 'scrooloose/syntastic'
 " Git support
 Plug 'tpope/vim-fugitive'
 
+" Set the working directory to the project root
+Plug 'airblade/vim-rooter'
+
 " Initialize the plugin system
 call plug#end()
 
