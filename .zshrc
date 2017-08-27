@@ -31,11 +31,18 @@ plugins=(git)
 
 # Add aliases
 ALIASES_FILE_PATH=$HOME/.aliases
+ALIASES_SECRET_FILE_PATH=$HOME/.aliases_secret
 function addalias() {
     ALIAS_NAME=`echo "$1" | grep -o ".*="`
-    sed -i "" "/alias $ALIAS_NAME/d" $ALIASES_FILE_PATH
+    sed -i "" "/alias $ALIAS_NAME/d" $2
     QUOTED=`echo "$1"\" | sed "s/$ALIAS_NAME/$ALIAS_NAME\"/g"`
-    echo "alias $QUOTED" >> $ALIASES_FILE_PATH
-    source $ALIASES_FILE_PATH
+    echo "alias $QUOTED" >> $2
+    source $2
+}
+function aa() {
+    addalias $1 $ALIASES_FILE_PATH
+}
+function aas() {
+    addalias $1 $ALIASES_SECRET_FILE_PATH
 }
 
