@@ -63,4 +63,5 @@ function aas() {
 
 source $HOME/.aliases
 source $HOME/.aliases_secret
+source $HOME/.env
 
