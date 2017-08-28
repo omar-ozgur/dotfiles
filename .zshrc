@@ -21,7 +21,7 @@ COMPLETION_WAITING_DOTS="true"
 
 # The plugins to load
 # Plugins can be found in ~/.oh-my-zsh/plugins/*
-plugins=(git)
+plugins=(git colored-man sublime web-search osx)
 
 ###############################################################################
 #                                                                             #
