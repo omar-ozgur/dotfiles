@@ -5,10 +5,7 @@
 ###############################################################################
 
 # The path to the oh-my-zsh installation
-export ZSH=/Users/oozgur/.oh-my-zsh
-
-# The oh-my-zsh source
-source $ZSH/oh-my-zsh.sh
+export ZSH=$HOME/.oh-my-zsh
 
 # The name of the theme to load
 ZSH_THEME="robbyrussell"
@@ -64,4 +61,5 @@ function aas() {
 source $HOME/.aliases
 source $HOME/.aliases_secret
 source $HOME/.env
+source $ZSH/oh-my-zsh.sh
 
