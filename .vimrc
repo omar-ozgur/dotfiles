@@ -11,9 +11,6 @@
 " Set the plugin directory
 call plug#begin('~/.vim/plugged')
 
-" Gruvbox color scheme
-Plug 'morhetz/gruvbox'
-
 " Molokai color scheme
 Plug 'tomasr/molokai'
 
@@ -47,6 +44,9 @@ Plug 'tpope/vim-fugitive'
 
 " Set the working directory to the project root
 Plug 'airblade/vim-rooter'
+
+" Golang support
+Plug 'fatih/vim-go'
 
 " Initialize the plugin system
 call plug#end()
@@ -172,7 +172,7 @@ set magic
 "                                                                             "
 """""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
 
-" Use the Solarized color scheme
+" Set the color scheme
 syntax enable
 let g:molokai_original=1
 let g:rehash256=1
