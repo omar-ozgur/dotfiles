@@ -61,5 +61,6 @@ function aas() {
 source $HOME/.aliases
 source $HOME/.aliases_secret
 source $HOME/.env
+source $HOME/.bash_profile
 source $ZSH/oh-my-zsh.sh
 
